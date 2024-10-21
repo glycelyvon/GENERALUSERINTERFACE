@@ -1,0 +1,475 @@
+<html>
+  <head>
+    <title>CompaniON</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="genuserhomepage.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="Assets/logo.png" alt="CompaniON Logo" />
+      </div>
+
+      <div class="nav">
+        <div class="search-bar">
+          <input placeholder="What are you looking for?" type="text" />
+        </div>
+        <ul>
+          <li><a href="index.html">Home </a></li>
+          <li><a href="rentcompanion.html">Companion </a></li>
+          <li><a href="howitworks.html">How it works </a></li>
+          <li><a href="">Profile</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="discover1-section">
+          <div class="text-content">
+            <h1>Welcome Users!</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni est
+              explicabo illo odit? Sit, blanditiis error. Ut vel soluta debitis
+              placeat modi ipsum alias rem numquam dicta. Modi, placeat cum.
+            </p>
+            <div class="buttons">
+              <a class="btn" href="#discover-container" onclick="scrollToDiscoverSection()">Discover more</a>   <a class="btn-see" href="rentcompanion.html">See all companions</a>
+          </div>
+
+          </div>
+          <div class="image-content">
+            <img alt="Placeholder image" src="Assets/homepage.png" />
+          </div>
+      </div>
+      
+     
+      <div class="steps">
+        <div class="icons-container">
+            <div class="step">
+                <img alt="Icon of a verified user with a checkmark" src="https://storage.googleapis.com/a1aa/image/zpubW9xF4hLHFdxnIWfU9taXeIez3wGve34KL1y8ifVtdBGdC.jpg"/>
+                <div class="step-title">Verified</div>
+                <div class="step-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero asperiores est nobis quasi consequuntur delectus accusamus debitis quis a, perspiciatis harum ne!
+                </div>
+            </div>
+            <div class="arrow">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="step">
+                <img alt="Icon of a magnifying glass searching for companions" src="https://storage.googleapis.com/a1aa/image/fFz6z6b0YiTCWqI3xKIseHNWSuZsvr2RyCWZ1sG6cesXXgRnA.jpg"/>
+                <div class="step-title">Find Companion</div>
+                <div class="step-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero asperiores est nobis quasi consequuntur delectus accusamus debitis quis a, perspiciatis harum ne!
+                </div>
+            </div>
+            <div class="arrow">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="step">
+                <img alt="Icon of a calendar with a clock" src="https://storage.googleapis.com/a1aa/image/uo1jZkdmyjrrIZlN0MOe3wf3tqxXwxbakHB3eI9lfiCwuAjOB.jpg"/>
+                <div class="step-title">Book Companion</div>
+                <div class="step-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero asperiores est nobis quasi consequuntur delectus accusamus debitis quis a, perspiciatis harum ne!
+                </div>
+            </div>
+        </div>
+       </div>
+      <div class="discover-container" id="discover-container">
+        <div class="centered-container">
+          <h1>Discover More</h1>
+        </div>
+      <div class="tabs">
+        <div class="tab active" onclick="showContent('events')">Events</div>
+        <div class="tab" onclick="showContent('places')">Places</div>
+        <div class="tab" onclick="showContent('plans')">Plans</div>
+      </div>
+
+  
+
+    
+        <!-- Events Content -->
+        <div class="content" id="events">
+            <div class="card">
+                <h3>Event 1</h3>
+                <img alt="Event Image" height="150" src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" width="300" />
+                <button onclick="openModal('eventModal1')">View Event</button>
+            </div>
+            <div class="card">
+                <h3>Event 2</h3>
+                <img alt="Event Image" height="150" src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" width="300" />
+                <button onclick="openModal('eventModal2')">View Event</button>
+            </div>
+            <div class="card">
+                <h3>Event 3</h3>
+                <img alt="Event Image" height="150" src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" width="300" />
+                <button onclick="openModal('eventModal3')">View Event</button>
+            </div>
+        </div>
+    
+        <!-- Places Content -->
+        <div class="content" id="places" style="display: none;">
+            <div class="card">
+                <h3>Place 1</h3>
+                <img alt="Place Image" height="150" src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" width="300" />
+                <button onclick="openModal('placesModal1')">View Place</button>
+            </div>
+            <div class="card">
+                <h3>Place 2</h3>
+                <img alt="Place Image" height="150" src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" width="300" />
+                <button onclick="openModal('placesModal2')">View Place</button>
+            </div>
+            <div class="card">
+                <h3>Place 3</h3>
+                <img alt="Place Image" height="150" src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" width="300" />
+                <button onclick="openModal('placesModal3')">View Place</button>
+            </div>
+        </div>
+    
+        <!-- Plans Content -->
+        <div class="content" id="plans" style="display: none;">
+          <div class="card">
+            <h3>Plan 1</h3>
+            <img alt="Place Image" height="150" src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" width="300" />
+            </div>
+
+            <div class="card">
+              <h3>Plan 3</h3>
+              <img alt="Place Image" height="150" src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" width="300" />
+                </div>
+
+                <div class="card">
+                  <h3>Plan 3</h3>
+                  <img alt="Place Image" height="150" src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" width="300" />
+                    </div>
+
+                    <div class="card">
+                      <h3>Plan 3</h3>
+                      <img alt="Place Image" height="150" src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" width="300" />
+                        </div>
+                      
+                        <div class="card">
+                          <h3>Plan 3</h3>
+                          <img alt="Place Image" height="150" src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" width="300" />
+                            </div>
+
+                            <div class="card">
+                              <h3>Plan 3</h3>
+                              <img alt="Place Image" height="150" src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" width="300" />
+                                </div>
+                
+            
+
+            
+            
+        
+    </div>
+    
+            <!-- Modal for Event 1 -->
+            <div id="eventModal1" class="modal">
+              <div class="modal-content">
+                  <span class="close" onclick="closeModal('eventModal1')">&times;</span>
+                  
+                  <div class="event-header">
+                      <img src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" alt="Event 1 Image">
+                      <div class="event-details">
+                          <h1>Event 1</h1>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                  </div>
+                  
+                  <div class="event-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                  
+                  <div class="event-images">
+                      <img src="https://storage.googleapis.com/a1aa/image/1Tc2kNHnTTInOFHVHn6ctghdNFxFL4FiYS2H4pEGhJNigO6E.jpg" alt="Event Image 1">
+                      <img src="https://storage.googleapis.com/a1aa/image/hsMjdTeYLL22Uah2But922oyHqgoLcFornfDsQ4HPNPFC6oTA.jpg" alt="Event Image 2">
+                      <img src="https://storage.googleapis.com/a1aa/image/CPD81yRXnf3wKKxa8ps82vmIAIlmHkbocu5iYtfnxafHE0RnA.jpg" alt="Event Image 3">
+                  </div>
+              </div>
+          </div>
+           <!-- Modal for Event 2 -->
+          <div id="eventModal2" class="modal">
+              <div class="modal-content">
+                  <span class="close" onclick="closeModal('eventModal2')">&times;</span>
+                  
+                  <div class="event-header">
+                      <img src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" alt="Event 1 Image">
+                      <div class="event-details">
+                          <h1>Event 2</h1>
+                          <p>Loremloremsinta ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                  </div>
+                  
+                  <div class="event-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                  
+                  <div class="event-images">
+                      <img src="https://storage.googleapis.com/a1aa/image/1Tc2kNHnTTInOFHVHn6ctghdNFxFL4FiYS2H4pEGhJNigO6E.jpg" alt="Event Image 1">
+                      <img src="https://storage.googleapis.com/a1aa/image/hsMjdTeYLL22Uah2But922oyHqgoLcFornfDsQ4HPNPFC6oTA.jpg" alt="Event Image 2">
+                      <img src="https://storage.googleapis.com/a1aa/image/CPD81yRXnf3wKKxa8ps82vmIAIlmHkbocu5iYtfnxafHE0RnA.jpg" alt="Event Image 3">
+                  </div>
+              </div>
+          </div>
+
+           <!-- Modal for Event 1 -->
+          <div id="eventModal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('eventModal3')">&times;</span>
+                
+                <div class="event-header">
+                    <img src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" alt="Event 1 Image">
+                    <div class="event-details">
+                        <h1>Event 3</h1>
+                        <p>Loremloremsintaheyhey ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                
+                <div class="event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                
+                <div class="event-images">
+                    <img src="https://storage.googleapis.com/a1aa/image/1Tc2kNHnTTInOFHVHn6ctghdNFxFL4FiYS2H4pEGhJNigO6E.jpg" alt="Event Image 1">
+                    <img src="https://storage.googleapis.com/a1aa/image/hsMjdTeYLL22Uah2But922oyHqgoLcFornfDsQ4HPNPFC6oTA.jpg" alt="Event Image 2">
+                    <img src="https://storage.googleapis.com/a1aa/image/CPD81yRXnf3wKKxa8ps82vmIAIlmHkbocu5iYtfnxafHE0RnA.jpg" alt="Event Image 3">
+                </div>
+            </div>
+        </div>  
+
+
+
+        <!-- Modal for Places 1 -->
+        <div id="placesModal1" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal('placesModal1')">&times;</span>
+              
+              <div class="event-header">
+                  <img src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" alt="Event 1 Image">
+                  <div class="event-details">
+                      <h1>Places 1</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+              </div>
+              
+              <div class="event-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              
+              <div class="event-images">
+                  <img src="https://storage.googleapis.com/a1aa/image/1Tc2kNHnTTInOFHVHn6ctghdNFxFL4FiYS2H4pEGhJNigO6E.jpg" alt="Event Image 1">
+                  <img src="https://storage.googleapis.com/a1aa/image/hsMjdTeYLL22Uah2But922oyHqgoLcFornfDsQ4HPNPFC6oTA.jpg" alt="Event Image 2">
+                  <img src="https://storage.googleapis.com/a1aa/image/CPD81yRXnf3wKKxa8ps82vmIAIlmHkbocu5iYtfnxafHE0RnA.jpg" alt="Event Image 3">
+              </div>
+          </div>
+      </div>
+    
+          <!-- Modal for Places 2 -->
+      <div id="placesModal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('placesModal2')">&times;</span>
+            
+            <div class="event-header">
+                <img src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" alt="Event 1 Image">
+                <div class="event-details">
+                    <h1>Places 2</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+            
+            <div class="event-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            
+            <div class="event-images">
+                <img src="https://storage.googleapis.com/a1aa/image/1Tc2kNHnTTInOFHVHn6ctghdNFxFL4FiYS2H4pEGhJNigO6E.jpg" alt="Event Image 1">
+                <img src="https://storage.googleapis.com/a1aa/image/hsMjdTeYLL22Uah2But922oyHqgoLcFornfDsQ4HPNPFC6oTA.jpg" alt="Event Image 2">
+                <img src="https://storage.googleapis.com/a1aa/image/CPD81yRXnf3wKKxa8ps82vmIAIlmHkbocu5iYtfnxafHE0RnA.jpg" alt="Event Image 3">
+            </div>
+        </div>
+    </div>
+  
+   <!-- Modal for Places 3 -->
+   <div id="placesModal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('placesModal3')">&times;</span>
+        
+        <div class="event-header">
+            <img src="https://storage.googleapis.com/a1aa/image/KXlT3sIw4fwTEC0sdb1IhdPGu0G8XFpO5o3J2NwaUyg4dX0JA.jpg" alt="Event 1 Image">
+            <div class="event-details">
+                <h1>Places 2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        
+        <div class="event-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        
+        <div class="event-images">
+            <img src="https://storage.googleapis.com/a1aa/image/1Tc2kNHnTTInOFHVHn6ctghdNFxFL4FiYS2H4pEGhJNigO6E.jpg" alt="Event Image 1">
+            <img src="https://storage.googleapis.com/a1aa/image/hsMjdTeYLL22Uah2But922oyHqgoLcFornfDsQ4HPNPFC6oTA.jpg" alt="Event Image 2">
+            <img src="https://storage.googleapis.com/a1aa/image/CPD81yRXnf3wKKxa8ps82vmIAIlmHkbocu5iYtfnxafHE0RnA.jpg" alt="Event Image 3">
+        </div>
+    </div>
+</div>
+
+    
+</div>
+</div>
+    <script>
+
+function scrollToDiscoverSection() {
+    // Target the discover section by its ID
+    document.getElementById('#discover-container').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
+
+// Open the modal for a specific event
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "block";
+    document.body.style.overflow = 'hidden';
+}
+
+// Close the modal
+function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "none";
+        document.body.style.overflow = 'hidden';
+}
+
+// Close the modal when clicking outside of it
+window.onclick = function(event) {
+    var modals = document.getElementsByClassName("modal");
+    for (var i = 0; i < modals.length; i++) {
+        if (event.target == modals[i]) {
+            modals[i].style.display = "auto";
+            document.body.style.overflow = 'auto';
+        }
+    }
+};
+
+
+
+
+      function showContent(tab) {
+        document.getElementById("events").style.display = "none";
+        document.getElementById("places").style.display = "none";
+        document.getElementById("plans").style.display = "none";
+        document.querySelectorAll(".tab").forEach(function (el) {
+          el.classList.remove("active");
+        });
+        document.getElementById(tab).style.display = "flex";
+        document
+          .querySelector(".tab[onclick=\"showContent('" + tab + "')\"]")
+          .classList.add("active");
+      }
+
+
+
+// Function to open the modal
+function openModal(modalId) {
+        document.getElementById(modalId).style.display = 'flex';
+    }
+
+    // Function to close the modal
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+    }
+
+    // Close modal if clicked outside content
+    window.onclick = function(event) {
+        var privacyModal = document.getElementById('privacyModal');
+        var termsModal = document.getElementById('termsModal');
+        
+        if (event.target == privacyModal) {
+            privacyModal.style.display = 'none';
+        }
+        if (event.target == termsModal) {
+            termsModal.style.display = 'none';
+        }
+    }
+
+    </script>
+    
+    <div class="testimonials">
+      <h2>Trusted by Thousands of Happy Customer</h2>
+      <div class="testimonial">
+        <img alt="Customer photo" height="50" src="" width="50" />
+        <span class="name"> Lydia Mae </span>
+        <span class="rating"> ★ 4.5 </span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          scelerisque leo nec magna.
+        </p>
+      </div>
+      <div class="testimonial">
+        <img alt="Customer photo" height="50" src="" width="50" />
+        <span class="name"> Crystal Tyson </span>
+        <span class="rating"> ★ 4.5 </span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          scelerisque leo nec magna.
+        </p>
+      </div>
+      <div class="testimonial">
+        <img alt="Customer photo" height="50" src="" width="50" />
+        <span class="name"> Earl John </span>
+        <span class="rating"> ★ 4.5 </span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          scelerisque leo nec magna.
+        </p>
+      </div>
+    </div>
+  </div>  
+
+    <footer>
+      <div class="logo">CompaniON</div>
+      <div class="social-icons">
+        <a href="#">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"> </i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"> </i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </div>
+      <div class="links">
+        <a href="#" onclick="openModal('privacyModal')">Privacy Policy</a>
+        <a href="#" onclick="openModal('termsModal')">Terms & Condition</a>
+      </div>
+    </footer>
+<!-- Privacy & Policy Modal -->
+<div id="privacyModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('privacyModal')">&times;</span>
+      <h2>Privacy Policy</h2>
+      <p>Here goes the privacy policy details...</p>
+  </div>
+</div>
+
+<!-- Terms & Condition Modal -->
+<div id="termsModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('termsModal')">&times;</span>
+      <h2>Terms & Condition</h2>
+      <p>Here goes the terms and conditions details...</p>
+  </div>
+</div>
+
+
+  </body>
+</html>
